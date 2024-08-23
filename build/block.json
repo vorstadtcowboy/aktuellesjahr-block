@@ -1,0 +1,39 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/aktuellesjahr",
+  "version": "0.1.0",
+  "title": "Aktuellesjahr",
+  "category": "widgets",
+  "icon": "calendar",
+  "description": "Display the current Year.",
+  "example": {},
+  "supports": {
+    "html": true,
+    "color": {
+      "background": true,
+      "text": true
+    },
+    "typography": {
+      "fontSize": true
+    },
+    "anchor": true,
+    "alignWide": true,
+    "background": {
+      "backgroundImage": true,
+      "backgroundSize": true
+    }
+  },
+  "attributes": {
+    "textAlign": {
+      "type": "string",
+      "default": "left"
+    }
+  },
+  "textdomain": "aktuellesjahr",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "viewScript": "file:./view.js"
+}
